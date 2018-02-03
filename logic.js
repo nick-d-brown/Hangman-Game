@@ -5,6 +5,7 @@
 var randomWord;
 var randomWordChosen = [];
 var lineWord = [];
+var guessableLetters = ["a", "b", "c", "d", "e", "f", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // var finalWord;
 var compGuessWord = document.getElementById("compGuessWord");
 var guessesLeft = document.getElementById("guessesLeft");
@@ -70,15 +71,51 @@ function userPlay() {
 
             }
         }
-        
-        // "should" replace the line at "_" with the corresponding letter at the position in ramdomWord var
-        else if (randomWordChosen.includes(event.key)) {
-            lineWord.splice[randomWordChosen.charAt(event.key), 1, event.key]
+
+        else if (guessableLetters.includes(event.key) !== true) {
+            alert("Using incorrect key. Must choose letter of the alphabet.");
         }
-        
+
         // alerts user if they have already picked a letter
         else if (userGuesses.includes(event.key)) {
             alert("You already chose that letter!");
+        }
+        
+        
+/*// variables
+
+var randomWord;
+var randomWordChosen = [];
+var lineWord = [];
+var guessableLetters = ["a", "b", "c", "d", "e", "f", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// var finalWord;
+var compGuessWord = document.getElementById("compGuessWord");
+var guessesLeft = document.getElementById("guessesLeft");
+
+var userGuesses = [];
+var userWords = document.getElementById("userWords");
+
+var userGuessScore;
+var gameOver = document.getElementById("gameOver");
+
+
+var sciWords = ["hypothesis", "molecule", "mineral", "science", "astronomy", "evolution", "climate", "experiment"];
+
+*/
+
+
+        // "should" replace the line at "_" with the corresponding letter at the position in ramdomWord var
+        else if (randomWordChosen.includes(event.key)) {
+            for (i=0; i<lineWord.length; i++) {
+                // if the index of the lined word = the indes of the random word chosednthen replace it 
+                // console.log(randomWordChosen[i])
+                // console.log(event.key)
+                if (randomWordChosen[i] === (event.key)) {
+                    lineWord[i] = randomWordChosen[i];
+                    console.log(lineWord[i])
+                    compGuessWord.textContent = lineWord.join(' ');
+                ;}
+            }
         }
         
         /* adds the letter to userGuesses id and remove one life if user choses wrong*/

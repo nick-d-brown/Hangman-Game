@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h2>Word you must guess below</h2>
-    <p><span id="compGuessWord"></span></p>
-    <h2>Number of guesses left</h2>
-    <p><span id="guessesLeft"></span></p>
-    <h2>Your guesses so far...</h2>
-    <p><span id="userWords"></span></p>
-    <p><span id="gameOver"></span></p>
+    <div class="title">
+        <h1>SCIENCE.<span class="small">A Hangman Word Game</span></h1>
+        
+    </div>
+    <div class="gameboard">
+        <h2><span class="begin-title">Press any button to begin!</span></h2>
+        <h2>Word you must guess:</h2>
+        <p><span id="compGuessWord"></span></p>
+        <h2>Number of guesses left:</h2>
+        <p><span id="guessesLeft"></span></p>
+        <h2>Your guesses so far:</h2>
+        <p><span id="userWords"></span></p>
+        <p><span id="gameOver"></span></p>
+    </div>
 
     <script type="text/javascript" src="logic.js"></script>
 </body>

@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1475139475866-6fef2ef89731?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3186c9e76c5f36b2dc4ebb3edd37afc8&auto=format&fit=crop&w=2100&q=80);
+    /* photo by nathan anderson on upsplash - https://unsplash.com/@nathananderson */
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+font-family: 'Play', sans-serif;
+font-weight: 700;
+font-size: 2.5em;
+width: 50%;
+margin: 0 auto;
+position: absolute;
+top: 0%;
+left: 0%;
+padding: 0%;
+}
+
+.small {
+    font-size: .5em;
+}
+
+.begin-title {
+    text-decoration: underline;
+}
+
+.gameboard {
+font-family: 'Play', sans-serif;
+border: 2px solid white;
+width: 25%;
+position: absolute;
+top: 35%;
+right: 5%;
+padding: 1%;
+}

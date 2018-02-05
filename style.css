@@ -22,12 +22,17 @@ left: 0%;
 padding: 0%;
 }
 
+.science {
+    text-shadow: -4px 3px 0px rgba(148, 232, 73, 1);    
+}
+
 .small {
     font-size: .5em;
 }
 
 .begin-title {
     text-decoration: underline;
+    color: rgba(148, 232, 73, 1);
 }
 
 .gameboard {
@@ -35,7 +40,7 @@ font-family: 'Play', sans-serif;
 border: 2px solid white;
 width: 25%;
 position: absolute;
-top: 35%;
+top: 28%;
 right: 5%;
 padding: 1%;
 }
